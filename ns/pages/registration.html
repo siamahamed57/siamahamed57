@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NS Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pagestyle/registration.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check" name="" value="">
+    <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+    <label class="logo">NS TECH</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html">Order now</a></li>
+      <li><a href="freesoft.html">Free software</a></li>
+      <li><a href="tutorial.html">Tutorial</a></li>
+      <li><a href="technews.html">Tech news</a></li>
+      <li class="account-dropdown">
+        <a class="active" href="account.html">Account</a>
+        <div class="dropdown-content">
+          <a href="login.html">Login</a>
+          <a class="active" href="registration.html">Registration</a>
+        </div>
+      </li>
+    </ul>
+    <img src="pageimg/moon.png" id="icon" alt="Moon Icon">
+  </nav>
+  <script src="pagesjs/registration.js"></script>
+
+
+
+  <div class="registration-form">
+    <h1>Registration</h1>
+    <form action="registration_process.php" method="post">
+        <label for="reg-name">Full Name:</label>
+        <input type="text" id="reg-name" name="name" required>
+
+        <label for="reg-email">Email Address:</label>
+        <input type="email" id="reg-email" name="email" required>
+
+        <label for="reg-phone">Phone Number:</label>
+        <input type="tel" id="reg-phone" name="phone">
+
+        <label for="reg-address">Address:</label>
+        <textarea id="reg-address" name="address"></textarea>
+
+        <label for="reg-gender">Gender:</label>
+        <div class="gender-inputs">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="not-say"> Prefer not to say</label>
+        </div>
+
+        <label for="reg-password">Password:</label>
+        <input type="password" id="reg-password" name="password" required>
+        <span class="password-hint">Password must include: Uppercase letter, number, and special character.</span>
+
+        <button type="submit" class="submit-button">Complete Registration</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Log in now</a></p>
+</div>
+
+
+
+
+
+
+<footer>
+  <div class="footer-section">
+    <h2>Company</h2>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">In a Media</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h2>Services</h2>
+    <ul>
+      <li><a href="#">Bug Fixing</a></li>
+      <li><a href="#">Professional Website Making</a></li>
+      <li><a href="#">Business Website Making</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="#">Social Icon 1</a></li>
+      <li><a href="#">Social Icon 2</a></li>
+      <li><a href="#">Social Icon 3</a></li>
+      <!-- Add more social icons as needed -->
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h2>Summary</h2>
+    <p>Write your summary here...</p>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 All rights reserved</p>
+  </div>
+</footer>
+
+
+
+  </body>
+</html>

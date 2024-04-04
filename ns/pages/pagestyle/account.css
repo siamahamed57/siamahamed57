@@ -1,0 +1,266 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: calibri;
+}
+:root{
+  --primary-color:#ffffff;
+  --secondary-color:#000000;
+  --third-color:#4d948a33;
+}
+.dark-theme{
+  --primary-color:#000000; /* Change primary color for dark mode */
+  --secondary-color:#ffffff;
+  --third-color:rgba(1, 71, 88, 0.158);
+}
+body, html {
+  background-color:var(--primary-color); /* Apply primary color as background */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1rem 2rem;
+  background:black;
+  
+}
+nav.light-mode{
+  background-color: var(--primary-color);
+
+}
+label.logo {
+  font-size: 30px;
+  font-family:'Venite Adoremus', sans-serif;
+  color: white;
+  margin: 0 100px;
+  line-height: 80px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a{
+  text-decoration: none;
+  color:var(--primary-color);
+}
+nav a.active{
+  color:#ff00c8;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a {
+  font-family:'Venite Adoremus', sans-serif;
+  font-size: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  color:rgb(6, 168, 114);
+  text-transform: capitalize;
+  padding: 8px 20px;
+  position: relative; /* Needed for the underline effect */
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Position the underline at the bottom */
+  left: 0;
+  width: 0;
+  height: 4px; /* Adjust underline height as needed */
+  background-color: #ff00c8; /* Adjust underline color */
+  transition: width 0.2s ease-in-out; /* Add animation for smooth grow */
+}
+
+nav ul li a:hover:after {
+  width: 100%; /* Animate underline to full width on hover */
+}
+
+
+#icon {
+  width: 30px; /* Adjust icon width as needed */
+  height: 30px; /* Adjust icon height as needed */
+  margin-right: 45px; /* Add margin for spacing */
+}
+#icon.light-mode{
+  filter: invert(1);
+}
+#icon.dark-mode{
+  filter:none;
+}
+#checkbtn {
+  float: left;
+  line-height: 80px;
+  margin-right: 10px;
+  font-size: 30px;
+  color:  rgb(255, 0, 179);
+  display: none;
+}
+.account-dropdown .dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.account-dropdown:hover .dropdown-content {
+display: block;
+}
+
+.account-dropdown:hover .dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.account-dropdown:hover .dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+
+
+
+#check {
+  display: none;
+}
+
+#check:checked ~ ul {
+  left: 0;
+  z-index: 1; /* Bring the nav menu to the front */
+}
+
+@media only screen and (max-width: 100px) {
+  nav {
+      flex-wrap: wrap; /* Wrap navigation on smaller screens */
+  }
+}
+
+@media(max-width: 500px) {
+  label.logo {
+      font-size: 26px;
+      margin: 0px 50px;
+  }
+}
+
+@media(max-width: 895px) {
+  label.logo {
+      margin: 0px 70px;
+  }
+
+  #checkbtn {
+      display: block;
+  }
+
+  nav ul {
+      width: 100%;
+      height: 100vh;
+      background:var(--primary-color);
+      position: fixed;
+      top:112px;
+      left: -100%;
+      transition: .3s;
+      z-index: 1; /* Ensure the nav menu is above other content */
+  }
+
+  nav ul li {
+      display: block;
+      text-align: center;
+      line-height: 50px;
+      margin: 15px;
+  }
+}
+
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+
+
+
+.slider {
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:var(--primary-color);
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: relative;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color:var(--primary-color);
+  transition: 0.3em;;
+  border-radius: 50%;
+}
+
+
+/* footer section*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.footer-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
