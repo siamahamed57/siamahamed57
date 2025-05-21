@@ -8,11 +8,20 @@
 </p>
 
 ---
+### 🔥 My GitHub Stats
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" height="150" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=your-github-username&theme=tokyonight&hide_border=true" height="150" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="150" />
+</div>
+---
 ### 📍 About Me
 
 - 🧑‍💻 I'm currently studying **BSc in Computer Science & Engineering** at **AIUB**
-- 🎓 Completed **102 credits** | Final year undergraduate
 - 🧠 My research: **Real-Time Cyberattack Detection using Machine Learning**
 - 🛰️ Past research topic: **AI for Renewable Energy Optimization**
 - 🧪 Passionate about: **AI, ML, Cybersecurity, Web & SaaS Development**
@@ -29,16 +38,6 @@
 
 ---
 
-### 🔥 My GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" height="150" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=your-github-username&theme=tokyonight&hide_border=true" height="150" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="150" />
-</div>
 
 ---
 
