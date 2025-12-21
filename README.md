@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Mohammad Ibrahim Khalil</h1>
+<h1 align="center">Hi 👋, I'm MD Ibrahim Khalil</h1>
 <h3 align="center">🚀 CSE Undergraduate | MERN Stack Developer | WordPress Expert | AI & ML Enthusiast | Founder of NEEXZEN</h3>
 
 ---
